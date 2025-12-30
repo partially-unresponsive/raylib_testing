@@ -1,36 +1,9 @@
-# Raylib-Quickstart
-A simple cross platform template for setting up a project with the bleeding edge raylib code.
-Works with C or C++.
-
-# Basic Setup
-Download this repository to get started.
-
-You can download the zip file of the repository from the Green Code button on github. This is the simplest way to get the template to start from.
-Once you have downloaded the template, rename it to your project name.
-
-or
-
-Clone the repository with git, form the url
-```
-https://github.com/raylib-extras/raylib-quickstart.git
-```
-
-If you are using a command line git client you can use the command below to download and rename the template in one step
-```
-git clone https://github.com/raylib-extras/raylib-quickstart.git [name-for-your-project-here]
-```
-
-# Naming projects
-* Replace the placeholder with your desired project name when running the git clone command above.
-* __Do not name your game project 'raylib', it will conflict with the raylib library.__
-* If you have used custom game name with __git clone__, there is no need to rename it again.
-
-
-## Supported Platforms
-Quickstart supports the main 3 desktop platforms:
-* Windows
-* Linux
-* MacOS
+# Flow Fields project
+Code forked from [MelonFruit](https://www.youtube.com/watch?v=UXO_jV3Nlnc)!
+Basic visualisation of a flow field using Perlin noise algorithm, as well as some complementary RGB. 
+Source code inside `./src/` folder. Use `CTRL+SHIFT+B` > "build debug" && `./build/Debug/raylib_testing` to build and run the project in VSCodium. Throw in a `make clean` and retry in case that doesn't work.
+- [ ] TODO: Change the name of the project to actually be related to flow fields, not "raylib_testing"
+- [ ] TODO: Implement the other 2 simulation videos: inverse kinematics and boids
 
 # VSCode Users (all platforms)
 *Note* You must have a compiler toolchain installed in addition to vscode.
@@ -40,40 +13,6 @@ Quickstart supports the main 3 desktop platforms:
 3. Open the folder in VSCode
 4. Run the build task ( CTRL+SHIFT+B or F5 )
 5. You are good to go
-
-# Windows Users
-There are two compiler toolchains available for windows, MinGW-W64 (a free compiler using GCC), and Microsoft Visual Studio
-## Using MinGW-W64
-* Rename the folder to your game name
-* Double click the `build-MinGW-W64.bat` file
-* CD into the folder in your terminal
-  * if you are using the W64devkit and have not added it to your system path environment variable, you must use the W64devkit.exe terminal, not CMD.exe
-  * If you want to use cmd.exe or any other terminal, please make sure that gcc/mingw-W64 is in your path environment variable.
-* run `make`
-* You are good to go
-
-### Note on MinGW-64 versions
-Make sure you have a modern version of MinGW-W64 (not mingw).
-The best place to get it is from the W64devkit from
-https://github.com/skeeto/w64devkit/releases
-
-or the version installed with the raylib installer
-
-#### If you have installed raylib from the installer
-Make sure you have added the path
-
-`C:\raylib\w64devkit\bin`
-
-To your path environment variable so that the compiler that came with raylib can be found.
-
-DO NOT INSTALL ANOTHER MinGW-W64 from another source such as msys2, you don't need it.
-
-## Microsoft Visual Studio
-* Rename the folder to your game name
-* Run `build-VisualStudio2022.bat`
-* double click the `.sln` file that is generated
-* develop your game
-* you are good to go
 
 # Linux Users
 * Rename the folder to your game name
@@ -92,7 +31,7 @@ DO NOT INSTALL ANOTHER MinGW-W64 from another source such as msys2, you don't ne
 * you are good to go
 
 # Output files
-The built code will be in the bin dir
+The built code will be in the `bin/Debug/` dir
 
 # Working directories and the resources folder
 The example uses a utility function from `path_utils.h` that will find the resources dir and set it as the current working directory. This is very useful when starting out. If you wish to manage your own working directory you can simply remove the call to the function and the header.
