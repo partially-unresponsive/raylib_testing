@@ -17,7 +17,7 @@ double field_func(double x, double y){
     perlin_alg p;
     float val = 0;
     float freq = 2;
-    float amp = 3;
+    float amp = 1;
 
     for (int i = 0; i < 4; i++){
         val += p.perlin(x*freq, y*freq) * amp;

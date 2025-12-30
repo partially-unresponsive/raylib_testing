@@ -1,7 +1,7 @@
 GLFW_ICON ICON "icon.ico"
 
 1 VERSIONINFO
-FILEVERSION     1,0,0,1
+FILEVERSION     1,0,1,1
 PRODUCTVERSION  1,0,0,1
 BEGIN
   BLOCK "StringFileInfo"
@@ -11,7 +11,7 @@ BEGIN
     BEGIN
       //VALUE "CompanyName", "issymissy"
       VALUE "FileDescription", "Flow fields demo utilizing raylib"
-      VALUE "FileVersion", "1.1.0"
+      VALUE "FileVersion", "1.1.1"
       VALUE "InternalName", "flowyboy"
       VALUE "LegalCopyright", "(c) 2025 izzyfix"
       //VALUE "OriginalFilename", "raylib_app"

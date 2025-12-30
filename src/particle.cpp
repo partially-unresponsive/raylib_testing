@@ -27,5 +27,5 @@ void particle::applyForce(RealVector force){
 }
 
 void particle::show() {
-    DrawCircle(pos.x, pos.y, PARTICLE_RADIUS, {255, 0, 0, 20});
+    DrawCircle(pos.x, pos.y, PARTICLE_RADIUS, {192, (unsigned char)(250*pos.x / GetScreenWidth()), (unsigned char)(250*pos.y / GetScreenHeight()), 50});
 }
